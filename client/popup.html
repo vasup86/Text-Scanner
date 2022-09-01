@@ -1,0 +1,35 @@
+<!-- This is the popup window html when clicked on icon -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner</title>
+    <link rel="stylesheet" href="popup.css" class="style">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <span>Scanner</span>
+        </div>
+    </div>
+    <div class="container text-field">
+        <textarea class="textarea" width="750px" name="textarea" id="textArea" cols="45" rows="15"
+            placeholder="scan text"></textarea>
+    </div>
+    <div class="container scan">
+        <button class="selector" id="selector">Scan</button>
+    </div>
+
+    <canvas id="canvas" width="250" height="250"></canvas>
+    <canvas id="canvas-2"></canvas>
+
+    <script src="background.js"></script>
+    <script src="html2canvas.min.js"></script>
+</body>
+
+</html>
